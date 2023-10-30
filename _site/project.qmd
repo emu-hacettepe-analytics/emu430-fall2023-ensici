@@ -1,5 +1,5 @@
 ---
-title: "Welcome to My Analytics Lab"
+title: "Welcome to Sena's Analytics Lab"
 ---
 
 This is a Quarto website.

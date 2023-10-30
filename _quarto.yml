@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "[Student/Group Full Name]'s Analytics Lab"
+  title: "[Sena Nur Enşici]'s Analytics Lab"
   navbar:
     search: true
     left:
@@ -22,11 +22,11 @@ website:
             
     tools:
       - icon: github
-        href: https://twitter.com
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/ensici
+      - icon: instagram
+        href: https://www.instagram.com/ensici/
       - icon: linkedin
-        href: https://linkedin.com
+        href: https://www.linkedin.com/in/sena-en%C5%9Fici-b47083176/
 
   sidebar:
     - title: "Assignments"
