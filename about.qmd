@@ -44,3 +44,5 @@ sidebar: false
 Folk Dance
 
 # CV
+
+[Download as PDF](https://drive.google.com/file/d/14_wuH7wGMPNrsUtzpKIuukW_koqkPcQ5/view?usp=drive_link)
