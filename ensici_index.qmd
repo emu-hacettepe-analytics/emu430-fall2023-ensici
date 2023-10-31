@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Sena's Analytics Lab"
-sidebar: false 
+sidebar: false
 ---
 
 Hello! My name is Sena Nur Enşici
@@ -8,3 +8,5 @@ Hello! My name is Sena Nur Enşici
 This is my personal webpage.
 
 Please stay tuned to follow my works on data analytics, blog posts, and more.
+
+![](images/tumblr_ma11pbpN0j1rfjowdo1_500-01.gif){width="133"}

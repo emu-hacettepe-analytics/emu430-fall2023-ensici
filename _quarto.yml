@@ -3,16 +3,16 @@ project:
   output-dir: docs
 
 website:
-  title: "[Sena Nur Enşici]'s Analytics Lab"
+  title: "[Sena Nur Ensici]'s Analytics Lab"
   navbar:
     search: true
     left:
       - text: Home
-        href: index.qmd
+        href: ensici_index.qmd
       - text: About Me
-        href: about.qmd
+        href: ensici_about.qmd
       - text: My Posts
-        href: posts.qmd
+        href: ensici_posts.qmd
       - text: "EMU430 Coursework"
         menu:
           - text: Assignments
@@ -46,8 +46,8 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: pulse 
-      dark: superhero
+      light: journal
+      dark: quartz
     css: styles.css
 
 
