@@ -138,12 +138,12 @@ Even though I have great interest and respect for Kemal Sunal's works, I think t
 b)  Check the ratings of 2-3 of your favorite movies. What are their standings?
 
     1.  [CM101MMXI Fundamentals](https://m.imdb.com/title/tt2592910/?ref_=sr_t_51)
-    2.  [Hükümet Kadin](https://m.imdb.com/title/tt2645092/?ref_=sr_t_201)
-    3.  [Ölümlü Dünya 2](https://m.imdb.com/title/tt27933364/?ref_=sr_t_4)
+    2.  [Delibal](https://www.imdb.com/title/tt5076214/)
+    3.  [Bihter](https://www.imdb.com/title/tt26258488/?ref_=fn_al_tt_1)
 
 ```{r}
 # My favorite movies
-favorite_movies <- c("Hukumet Kadin","CM101MMXI Fundamentals","Olumlu Dunya 2")  
+favorite_movies <- c("Delibal","CM101MMXI Fundamentals","Bihter")  
 
 # Check the ratings of my favorite movies
 ratings_of_favorite_movies <- movies[(movies$Title %in% favorite_movies), c("Title", "Rating")]
