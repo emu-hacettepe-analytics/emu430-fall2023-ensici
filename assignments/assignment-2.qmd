@@ -58,20 +58,24 @@ for (url in url_vector) {
     parse_number()
   
   # Extract number of duration
-  duration <- website %>%
-    html_nodes(".sc-1b7x5y9-6.gwfzJB.dli-watch-bar") %>%
-    html_text() %>%
-    str_extract_all("\\d+") %>%
-    lapply(function(x) as.numeric(x)) %>%
-    unlist() %>%
-    sum()
+   duration <- website %>% html_nodes(".sc-43986a27-7.dBkaPT.dli-title-metadata")
+   duration <- html_text(duration)
+  
+    hour <- str_extract(duration, "\\d+h") %>%
+    str_replace("h", "") %>%
+    as.numeric() %% 10
+  
+    total_duration <- hour * 60 + str_extract(duration, "\\d+m") %>%
+    str_replace("m", "") %>%
+    as.numeric()
+
   
   # Append data to vectors
   Title <- append(Title, title_names)
   Year <- append(Year, year)
   Rating <- append(Rating, rating)
   Votes <- append(Votes, vote)  # Corrected variable name
-  Duration <- append(Duration, duration)
+  Duration <- append(Duration, total_duration)
 }
 
 # Create a data frame from the scraped data
@@ -186,7 +190,7 @@ e.  Do you believe there is a relationship between a movie's duration and its ra
 # Assuming 'movies' is your data frame with columns: Title, Year, Duration, Rating, Votes, Rank
 
 # Calculate correlation coefficient between Duration and Ratings
-corr_duration_rating <- cor(na.omit(movies$Duration), na.omit(movies$Rating))
+corr_duration_rating <- cor(movies$Duration, movies$Rating)
 
 # Print the correlation coefficient
 cat("Correlation Coefficient between Duration and Ratings:", corr_duration_rating, "\n")
