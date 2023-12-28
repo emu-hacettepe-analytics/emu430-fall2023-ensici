@@ -4,8 +4,7 @@ title: "Assignment 2"
 
 # Assignment 2
 
-1. Using the filters on https://m.imdb.com/search, list all Turkish movies with more
-than 2500 reviews, and save the URLs.
+1.  Using the filters on https://m.imdb.com/search, list all Turkish movies with more than 2500 reviews, and save the URLs.
 
 2.  Start web scrapping to create a Data Frame with columns: Title, Year, Duration, Rating, Votes
 
@@ -247,7 +246,6 @@ print(head(movies_top_1000_turkish))
 
 ```
 
-
 ```{r}
 # Assuming 'movies_top_1000_turkish' and 'movies' have columns: "Title", "Year", "Duration", "Rating", "Votes"
 Sys.setlocale("LC_ALL", "en_US.UTF-8")
@@ -259,5 +257,3 @@ top1000_merged <- merge(movies_top_1000_turkish, movies, by = c("Title", "Year")
 print(top1000_merged)
 
 ```
-
-
