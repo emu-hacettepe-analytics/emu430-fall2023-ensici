@@ -146,7 +146,7 @@ b)  Check the ratings of 2-3 of your favorite movies. What are their standings?
 favorite_movies <- c("Delibal","CM101MMXI Fundamentals","Bihter")  
 
 # Check the ratings of my favorite movies
-ratings_of_favorite_movies <- movies[(movies$Title %in% favorite_movies), c("Title", "Rating")]
+ratings_of_favorite_movies <- movies[(movies$Title %in% favorite_movies), c("Title", "Rating", "Year", "Duration")]
 
 # Arrange the data frame in descending order by Rating
 ratings_of_favorite_movies <- ratings_of_favorite_movies[order(ratings_of_favorite_movies$Rating, decreasing = TRUE), ]
