@@ -18,6 +18,7 @@ library(stringr)
 library(rvest)
 library(ggplot2)
 
+
 # IMDb URLs for movies between 2010-2023 and before 2010
 url_btw_2010_2023 <- "https://www.imdb.com/search/title/?title_type=feature&release_date=2010-01-01,2023-12-31&num_votes=2500,&country_of_origin=TR&count=250"
 
