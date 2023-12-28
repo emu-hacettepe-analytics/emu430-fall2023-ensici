@@ -2,7 +2,7 @@
 title: "Assignment 2"
 ---
 
-# Assignment 2
+# Web Scraping of Turkish Movies from IMDb
 
 1.  Using the filters on https://m.imdb.com/search, list all Turkish movies with more than 2500 reviews, and save the URLs.
 
