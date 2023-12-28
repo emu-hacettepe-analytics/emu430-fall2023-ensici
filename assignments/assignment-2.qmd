@@ -197,7 +197,7 @@ cat("Correlation Coefficient between Duration and Ratings:", corr_duration_ratin
 
 ```
 
-As standard deviation is zero, we can say there is no relationship between duration and rating.
+We can say there is no relationship between duration and rating.
 
 4.  Repeat steps 1 and 2 for a different advanced IMDb search. This time, find Turkish movies that are in the top 1000 movies on IMDb. Perform similar scraping to create another Data Frame with only the columns: Title, Year.
 
